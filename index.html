@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon-love.ico" type="image/x-icon" />
+    <title>Monica Florent's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Image Modal -->
+    <div id="imgModal" class="modal">
+      <span class="modal-close" id="modalClose">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+
+    <!-- === NAVIGATION === -->
+    <nav class="main-nav">
+      <div class="nav-wrapper">
+        <div class="nav-logo">
+          <span class="slash">// </span>
+          <strong class="logo-name">Monica </strong
+          ><span class="logo-suffix"> Flo</span>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="#">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact Me</a>
+        </div>
+        <span class="nav-toggle" id="nav-toggle">&#9776;</span>
+      </div>
+    </nav>
+
+    <!-- HERO HEADER SECTION -->
+    <section class="hero">
+      <div class="hero-box">
+        <img class="hero-photo" src="foto.jpg" alt="Profile Photo" />
+        <h2>Hello World!</h2>
+        <h1>I'm Monica Florent Natalie Margaretha Sinurat</h1>
+        <p>
+          I'm a dedicated <span class="highlight">UI/UX Designer</span> with
+          expertise in <span class="highlight">Figma</span>, and
+          <span class="highlight">Adobe Photoshop</span>. I am passionate about
+          creating impactful digital experiences by transforming complex
+          challenges into simple, user-friendly solutions through
+          research-driven, user-first design.
+        </p>
+        <a href="CV - Monica Florent NMS.pdf" class="cv-button" target="_blank"
+          >View Monica's CV ↗</a
+        >
+      </div>
+    </section>
+
+    <div class="scroll-down">
+      <a href="#about">
+        <span>↓</span>
+        <div>Scroll Down</div>
+      </a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-gallery">
+          <div class="project-item">
+            <h3>Fullstack Developer & UI/UX Designer</h3>
+            <p>
+              <strong>Project Name:</strong> MOREEN – Mountain Orientation &
+              Readiness for Exploration and Environmental Navigation
+            </p>
+            <p><strong>Problem & Goal:</strong> Many beginner hikers struggle with preparation, safety, and route planning due to scattered information sources. This project aims to solve that by providing a centralized, user-friendly platform that supports safe and enjoyable hiking experiences.</p>
+            <p><strong>Description:</strong> A cross-platform mobile app designed for beginner hikers, offering trail guidance, route planning, safety information, and booking services — all within an intuitive and accessible interface.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Hiking guide with beginner-friendly UI</li>
+              <li>Online ticket booking for hiking spots</li>
+              <li>Emergency contacts and safety information</li>
+            </ul>
+            <p><strong>Tools & Technologies:</strong> VSC, Flutter (Dart), Laravel (PHP), MySQL
+              (XAMPP), REST API, Figma</p>
+            
+            <div class="project-images">
+              <img
+                src="projects/mobile.png"
+                alt="Mobile"
+                onclick="openModal(this)"
+              />
+            </div>
+          </div>
+
+          <div class="project-item">
+            <h3>Fullstack Web Developer & UI/UX Designer</h3>
+            <p>
+              <strong>Project Name:</strong> MOREEN Admin & Web Guide System
+            </p>
+            <p><strong>Problem & Goal:</strong> Managing hiking information, ticket bookings, and user data manually can be time-consuming and prone to errors. This project aims to provide an efficient and centralized web-based management system to support the MOREEN hiking platform.</p>
+            <p><strong>Description:</strong> A web-based support system designed to help administrators manage the MOREEN hiking platform effectively. The platform includes tools for managing hiking content, booking schedules, and user roles — all within a user-friendly and responsive interface.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Admin dashboard with role-based access control</li>
+              <li>Hiking content editor (add, edit, delete trails and safety info)</li>
+              <li>Online ticket booking and schedule management panel</li>
+            </ul>
+            <p><strong>Tools & Technologies:</strong> VSC, Laravel (PHP), MySQL (XAMPP), HTML,
+              CSS, JavaScript, Figma</p>
+            <div class="project-images">
+              <img src="projects/web.png" alt="Web" onclick="openModal(this)" />
+            </div>
+          </div>
+
+          
+          <div class="project-item">
+          <h3>UI/UX Design Project</h3>
+          <p><strong>Project Name:</strong> MUSICA – Music Streaming Web Platform</p>
+          <p><strong>Problem & Goal:</strong> Many users struggle with cluttered interfaces and complex navigation on music platforms. This project aims to design a simple, intuitive, and visually appealing interface that makes discovering and listening to music effortless and enjoyable.</p>
+          <p><strong>Description:</strong> A web-based music streaming platform focused on delivering a seamless and engaging user experience. The design emphasizes simplicity, intuitive navigation, and aesthetic appeal to make discovering and listening to music enjoyable and effortless.</p>
+          <p><strong>Key Features:</strong></p>
+          <ul>
+            <li>Clean and minimalist search bar for quick access to songs and artists.</li>
+            <li>Visual catalog of artists with an intuitive browsing experience.</li>
+            <li>Organized collection view for playlists and albums.</li>
+            <li>User-friendly player interface with lyrics display and easy playback controls.</li>
+          </ul>
+          <p><strong>Tools & Technologies:</strong> Figma, FigJam</p>
+          <div class="project-images">
+            <img
+              src="projects/musica.png"
+              alt="Web"
+              onclick="openModal(this)"
+            />
+          </div>
+        </div>
+
+          <div class="project-item">
+            <h3>UI/UX Design Project</h3>
+            <p><strong>Project Name:</strong> To-Do List Mobile App</p>
+            <p><strong>Problem & Goal:</strong> Many people struggle to stay organized and manage daily activities efficiently. This project aims to create a simple and intuitive task management experience that helps users plan, track, and complete their tasks with ease.</p>
+            <p><strong>Description:</strong> A task management mobile application designed to help users organize and track their daily activities effectively. The design prioritizes simplicity, clarity, and user-friendly navigation to ensure a smooth experience when adding, viewing, and completing tasks.
+            </p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Onboarding screen with minimalistic design</li>
+              <li>Sign In and Register pages with intuitive input fields</li>
+              <li>Easy-to-navigate task list with add, check, and complete functions.</li>
+              <li>Personalized user profile with editable information.</li>
+            </ul>
+            <p><strong>Tools & Technologies:</strong> Figma, FigJam</p>
+            <div class="project-images">
+              <img
+                src="projects/todo.png"
+                alt="Web"
+                onclick="openModal(this)"
+              />
+            </div>
+          </div>
+
+
+        <div class="project-item">
+          <h3>Graphic Designer & Brand Visual Creator</h3>
+          <p><strong>Project Name:</strong> MOREEN Corp Logo Design</p>
+          <p><strong>Description:</strong> A professional logo design project
+            representing the identity of MOREEN Corp, a company focused on
+            mountain hiking and outdoor adventure solutions.
+          </p>
+          <p><strong>Key Features:</strong></p>
+          <ul>
+            <li>Elegant and minimalist logo design with a global theme</li>
+            <li>
+              Balanced typography integrating the company initials (M,F,N,S)
+            </li>
+            <li>Circular composition reflecting unity and worldwide reach</li>
+          </ul>
+          <p><strong>Tools:</strong> Canva & AdobePhotoshop</p>
+          <div class="project-images">
+            <img
+              src="projects/logo-moreen.png"
+              alt="Web"
+              onclick="openModal(this)"
+            />
+          </div>
+        </div>
+
+        <div class="project-item">
+          <h3>Graphic Designer & Visual Content Creator</h3>
+          <p><strong>Project Name:</strong> MORA ULOS Promotional Poster</p>
+          <p><strong>Description:</strong> A promotional poster design project
+            created to showcase and market various types of traditional Batak
+            Ulos and related products. The design blends traditional Batak
+            cultural elements with a modern layout to attract customers and
+            enhance brand identity.</p>
+          <p><strong>Key Features:</strong></p>
+          <ul>
+            <li>Eye-catching poster layout with cultural motifs and Batak
+              traditional patterns</li>
+            <li>
+              Product highlights including various Ulos types and traditional
+              herbal oil
+            </li>
+            <li>Balanced use of typography and imagery for visual appeal</li>
+            <li>
+              Optimized design for both print and digital marketing campaigns
+            </li>
+          </ul>
+          <p><strong>Tools:</strong> Canva</p>
+          <div class="project-images">
+            <img
+              src="projects/banner-ulos.png"
+              alt="Web"
+              onclick="openModal(this)"
+            />
+          </div>
+        </div>
+
+        <div class="project-item">
+          <h3> Graphic Designer & Visual Content Creator</h3>
+          <p>
+            <strong>Project Name:</strong> Educational Poster Series – Library
+            Etiquette & Classroom Rules
+          </p>
+          <p><strong>Description:</strong> A creative poster design project aimed
+            at promoting good behavior and discipline among students in
+            educational environments. The series includes two posters: one
+            illustrating proper library etiquette and another outlining
+            classroom rules. Both designs use playful illustrations, vibrant
+            colors, and easy-to-understand language to effectively communicate
+            messages to children.
+          </p>
+          <p><strong>Key Features:</strong></p>
+          <ul>
+            <li>Engaging and child-friendly visual style</li>
+            <li>Clear, concise messaging to encourage positive behavior</li>
+            <li>Use of illustrations and icons for better understanding</li>
+            <li>Suitable for print and digital educational materials</li>
+          </ul>
+          <p><strong>Tools:</strong> Canva</p>
+          <div class="project-images">
+            <img
+              src="projects/poster1.png"
+              alt="Web"
+              onclick="openModal(this)"
+            />
+            <img
+              src="projects/poster2.png"
+              alt="Web"
+              onclick="openModal(this)"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-category">   
+
+          <h3>Technology</h3>
+          <ul class="skills">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design Principles</li>
+            <li>Design Systems</li>
+            <li>Git & GitHub</li>
+          </ul>
+
+          <h3>Tools</h3>
+          <ul class="skills">
+            <li>Figma</li>
+            <li>Miro</li>
+            <li>Figjam</li>
+            <li>Notion</li>
+            <li>Maze</li>
+            <li>Adobe Photoshop</li>
+          </ul>
+
+          <h3>Creative Skills</h3>
+          <ul class="skills">
+            <li>Design Thinking</li>
+            <li>Wireframing & Prototyping</li>
+            <li>Interaction Design</li>
+            <li>Information Architecture</li>
+            <li>User Research & Usability Testing</li>
+            <li>Accessibility</li>
+            <li>Technical Documentation</li>
+            <li>Research & Problem Solving</li>
+          </ul>
+
+          <h3>Additional Skills</h3>
+          <ul class="skills">  
+            <li>Camera Person/Videographer</li>
+            <li>Video Editing</li>
+          </ul>
+        
+
+          <h3>Languages</h3>
+          <ul class="skills">
+            <li>Indonesia (Native)</li>
+            <li>English (Intermediate)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Organizational Experience</h2>
+        <div class="experience-item">
+          <p><strong>Secretary – Mapala UTY</strong> (2022–2023)</p>
+          <div class="experience-details">
+            <ul>
+              <li>
+                Drafted and managed organizational documents including activity
+                proposals, official correspondence, and accountability reports
+                for campus submission.
+              </li>
+              <li>
+                Organized meeting agendas, recorded minutes, and maintained
+                proper documentation of all internal and external activities.
+              </li>
+              <li>
+                Supported coordination and logistics for nature-related
+                activities such as hiking, basic training, and environmental
+                programs.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <p>
+            <strong>Camera Person/Videography – KA Media Ministry</strong>
+            (2023–2024)
+          </p>
+          <div class="experience-details">
+            <ul>
+              <li>
+                Captured and managed visual documentation for worship services
+                and spiritual events, both onsite and online.
+              </li>
+              <li>
+                Contributed to the production of creative video content for
+                social media and weekly services, ensuring high-quality visuals
+                and composition.
+              </li>
+              <li>
+                Collaborated with the production team in preparing camera
+                equipment, lighting, and audio, and assisted in basic editing
+                processes.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2 class="contact-title">Get in touch</h2>
+        <p class="contact-desc">For business inquiry please send email to</p>
+        <p class="contact-email">
+          <a href="mailto:monicaflorentnms@gmail.com" class="email-link"
+            >monicaflorentnms@gmail.com</a
+          >
+        </p>
+        <div class="contact-icons">
+          <a href="mailto:monicaflorentnms@gmail.com" target="_blank">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/new-post.png"
+              alt="Email"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/monica-florent" target="_blank">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"
+              alt="LinkedIn"
+            />
+          </a>
+          <a href="https://github.com/monicaflorent" target="_blank">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/github.png"
+              alt="GitHub"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const modal = document.getElementById("imgModal");
+      const modalImg = document.getElementById("modalImage");
+      const modalClose = document.getElementById("modalClose");
+
+      document.querySelectorAll(".project-images img").forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+      });
+
+      modalClose.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      // Aktifkan feather icons
+      feather.replace();
+
+      // Toggle navigasi (hamburger menu)
+      const navToggle = document.getElementById("nav-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        document.querySelector(".nav-wrapper").classList.toggle("active");
+      });
+
+      // Modal Gambar
+      const modal = document.getElementById("imgModal");
+      const modalImg = document.getElementById("modalImage");
+      const modalClose = document.getElementById("modalClose");
+
+      document.querySelectorAll(".project-images img").forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+      });
+
+      modalClose.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
